@@ -18,8 +18,7 @@ class Solution:
         return max(self.recursiveDepth(tree.left), self.recursiveDepth(tree.right)) + 1
 
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        depth = self.recursiveDepth(root)
-        return depth
+        return self.recursiveDepth(root)
 
 
 if __name__ == '__main__':
