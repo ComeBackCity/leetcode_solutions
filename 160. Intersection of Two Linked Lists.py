@@ -22,7 +22,7 @@ class Solution:
 
         if lenA > lenB:
             difference = lenA - lenB
-            for i in range(difference):
+            for _ in range(difference):
                 headA = headA.next
         else:
             difference = lenB - lenA
