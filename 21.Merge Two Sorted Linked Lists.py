@@ -27,11 +27,7 @@ class Solution:
                 l2 = l2.next
             retList = retList.next
 
-        if l1:
-            retList.next = l1
-        else:
-            retList.next = l2
-
+        retList.next = l1 or l2
         return dummy.next
 
 

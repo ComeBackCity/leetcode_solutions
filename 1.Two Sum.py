@@ -5,7 +5,7 @@ class Solution:
     def twoSum(self, nums: [int], target: int) -> [int]:
         toReturn = []
         length = len(nums)
-        for i in range(0, length - 1):
+        for i in range(length - 1):
             for j in range(i + 1, length):
                 if nums[i] + nums[j] == target:
                     toReturn.append(i)
@@ -17,9 +17,7 @@ class Solution2:
     # Time Complexity = O(n)
     def twoSum(self, nums: [int], target: int) -> [int]:
         length = len(nums)
-        hashMap = {}
-        for i in range(length):
-            hashMap[nums[i]] = i
+        hashMap = {nums[i]: i for i in range(length)}
         for i in range(length):
             complement = target - nums[i]
             if complement in hashMap and hashMap[complement] != i:
