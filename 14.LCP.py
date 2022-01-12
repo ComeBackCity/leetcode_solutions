@@ -8,15 +8,13 @@ class Solution:
             return lcp
         strs.sort(key=len)
         total = len(strs)
-        substring_map = {}
         str1 = strs[0]
         length = len(str1)
-        for i in range(length + 1):
-            substring_map[str1[0:i]] = 1
+        substring_map = {str1[:i]: 1 for i in range(length + 1)}
         len_to_check = length + 1
         for i in range(1, total):
             for j in range(len_to_check):
-                key = strs[i][0:j]
+                key = strs[i][:j]
                 if key in substring_map:
                     lcp = key
                 else:

@@ -8,20 +8,21 @@ class Solution:
             ']': '['
         }
 
+    # Time = O(n) memory = O(1)
     def isValid(self, s: str) -> bool:
         stack = []
         for i in range(len(s)):
-            if s[i] == '(' or s[i] == '{' or s[i] == '[':
+            if s[i] in ['(', '{', '[']:
                 stack.append(s[i])
             else:
-                if len(stack) == 0:
+                if not stack:
                     return False
                 idx = len(stack) - 1
                 p = stack.pop(idx)
                 if self.pair_map[s[i]] != p:
                     return False
 
-        return len(stack) == 0
+        return not stack
 
 
 if __name__ == "__main__":

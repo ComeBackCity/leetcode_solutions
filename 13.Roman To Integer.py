@@ -22,11 +22,8 @@ class Solution2:
         length = len(s)
         num = 0
         i = 0
-        for _ in range(0, length):
-            key = None
-            if i+1 <= length-1:
-                key = s[i] + s[i+1]
-
+        for _ in range(length):
+            key = s[i] + s[i+1] if i+1 <= length-1 else None
             if i >= length:
                 break
             elif key is not None and key in self.value_map:

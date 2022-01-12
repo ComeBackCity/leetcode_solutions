@@ -14,7 +14,7 @@ class Solution:
 
 
 class Solution2:
-    # Time Complexity = O(n)
+    # Time Complexity = O(n) Memory complexity: O(n)
     def twoSum(self, nums: [int], target: int) -> [int]:
         length = len(nums)
         hashMap = {nums[i]: i for i in range(length)}
