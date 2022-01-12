@@ -21,10 +21,7 @@ class Solution:
         return order
 
     def inorderTraversal(self, root: TreeNode) -> List[int]:
-        order = []
-        if root is not None:
-            order = self.recursiveTraversal(root, [])
-        return order
+        return self.recursiveTraversal(root, []) if root is not None else []
 
 
 if __name__ == '__main__':

@@ -17,7 +17,8 @@ class Solution:
         elif tree1 is None or tree2 is None:
             return False
 
-        return (tree1.val == tree2.val) and self.recursiveCheck(tree1.left, tree2.right) and self.recursiveCheck(tree1.right, tree2.left)
+        return (tree1.val == tree2.val) and self.recursiveCheck(tree1.left, tree2.right) and self.recursiveCheck(
+            tree1.right, tree2.left)
 
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         return self.recursiveCheck(root, root)

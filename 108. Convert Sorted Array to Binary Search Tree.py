@@ -15,9 +15,9 @@ class Solution:
         list_length = len(nums)
         if list_length == 0:
             return None
-        mid = int(list_length / 2)
+        mid = list_length // 2
         root = TreeNode(nums[mid])
-        left = self.sortedArrayToBST(nums[0:mid])
+        left = self.sortedArrayToBST(nums[:mid])
         right = self.sortedArrayToBST(nums[mid + 1:len(nums)])
         root.left = left
         root.right = right

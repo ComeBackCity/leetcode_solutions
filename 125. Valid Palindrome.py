@@ -4,6 +4,7 @@ class Solution:
     def isAlphaNumeric(self, c):
         return ('A' <= c <= 'Z') or ('a' <= c <= 'z') or ('0' <= c <= '9')
 
+    # Time = O(n) memory = O(1)
     def isPalindrome(self, s: str) -> bool:
         l, r = 0, len(s) - 1
         while l < r:
