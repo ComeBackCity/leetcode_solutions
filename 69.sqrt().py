@@ -1,13 +1,13 @@
 # Problem Link: https://leetcode.com/problems/sqrtx/
 
 class Solution:
+    # O(log n) time O(1) memory
     def mySqrt(self, x: int) -> int:
         start = 0
         end = x
 
         while start + 1 < end:
             mid = start + (end - start) // 2
-            print(start, mid, end)
             mid_square = mid * mid
 
             if mid_square == x:

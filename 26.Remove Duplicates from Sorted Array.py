@@ -4,8 +4,9 @@ from typing import List
 
 
 class Solution:
+    # Time complexity = O(n)
     def removeDuplicates(self, nums: List[int]) -> int:
-        if len(nums) == 0:
+        if not nums:
             return 0
         tracking = nums[0]
         index = 1
