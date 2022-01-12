@@ -7,7 +7,6 @@ class Solution:
         neg = False
 
         for ch in s:
-            print(ch)
             if leading_ws and ch == ' ':
                 pass
             elif not sign_check and ch == '+':

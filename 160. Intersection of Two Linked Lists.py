@@ -26,7 +26,7 @@ class Solution:
                 headA = headA.next
         else:
             difference = lenB - lenA
-            for i in range(difference):
+            for _ in range(difference):
                 headB = headB.next
 
         while headA:

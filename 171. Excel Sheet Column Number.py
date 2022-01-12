@@ -3,6 +3,7 @@ class Solution:
     def charToNum(self, a:str) -> int:
         return ord(a) - 64
 
+    # time = O(n)
     def titleToNumber(self, columnTitle: str) -> int:
         length = len(columnTitle)
         column_no = 0
