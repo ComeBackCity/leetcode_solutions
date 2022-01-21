@@ -12,6 +12,7 @@ class Solution:
             '9': 'wxyz'
         }
 
+    # Time = O(n*4^n) memory = O(1)
     def backtrack(self, i, digits, curStr, res):
         if len(curStr) == len(digits):
             res.append(curStr)

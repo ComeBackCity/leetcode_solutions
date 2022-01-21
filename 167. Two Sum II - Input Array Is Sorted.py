@@ -3,6 +3,7 @@ from typing import List
 
 
 class Solution:
+    # Time = O(n) memory = O(1)
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         i, j = 0, len(numbers) - 1
         while i < j:

@@ -3,6 +3,7 @@ from typing import List
 
 
 class Solution:
+    # Time = O(n^2) memory = O(1)
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         res = []
         nums.sort()
