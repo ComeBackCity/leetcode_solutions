@@ -1,6 +1,6 @@
 # Problem Link: https://leetcode.com/problems/decode-ways/
 class Solution:
-    # time = O(n) memory= O(1)
+    # time = O(n) memory= O(n)
     def numDecodings(self, s: str) -> int:
         dp = [0] * (len(s) + 2)
         dp[-1] = dp[-2] = 1
