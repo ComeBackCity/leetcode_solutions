@@ -25,6 +25,7 @@ class Solution:
             r -= 1
         return True
 
+
 # More Pythonic version
 class Solution2:
     def isPalindrome(self, s: str) -> bool:

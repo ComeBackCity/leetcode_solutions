@@ -17,10 +17,7 @@ class Solution:
             else:
                 end = mid
 
-        if end * end <= x:
-            return end
-        else:
-            return start
+        return end if end * end <= x else start
 
 
 if __name__ == "__main__":

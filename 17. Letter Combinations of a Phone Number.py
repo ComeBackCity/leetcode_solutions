@@ -1,4 +1,7 @@
 # Problem Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+from typing import List
+
+
 class Solution:
     def __init__(self):
         self.mapping = {
@@ -12,7 +15,7 @@ class Solution:
             '9': 'wxyz'
         }
 
-    # Time = O(n*4^n) memory = O(1)
+    # Time = O(n*4^n) memory = O(4*n)
     def backtrack(self, i, digits, curStr, res):
         if len(curStr) == len(digits):
             res.append(curStr)

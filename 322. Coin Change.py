@@ -14,7 +14,4 @@ class Solution:
                     min_coins = min(dp[i - j] + 1, min_coins)
             dp[i] = min_coins
 
-        if dp[amount] == inf:
-            return -1
-        else:
-            return dp[amount]
+        return -1 if dp[amount] == inf else dp[amount]

@@ -3,6 +3,7 @@ from typing import List
 
 
 class Solution:
+    # time = O(n) memory = O(1)
     def maxArea(self, height: List[int]) -> int:
         l, r = 0, len(height) - 1
         max_area = min(height[l], height[r]) * (r - l)

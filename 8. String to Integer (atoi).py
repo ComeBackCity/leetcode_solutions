@@ -1,5 +1,6 @@
 # Problem Link: https://leetcode.com/problems/string-to-integer-atoi/submissions/
 class Solution:
+    # time = O(n) memory = O(1)
     def myAtoi(self, s: str) -> int:
         res = 0
         leading_ws = True

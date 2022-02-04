@@ -18,7 +18,8 @@ class Solution:
 
 class Solution2:
     # time = O(n lg n) memory = O(1)
-    def binary_search(self, arr, num):
+    @staticmethod
+    def binary_search(arr, num):
         l, r = 0, len(arr) - 1
 
         while l <= r:

@@ -4,6 +4,7 @@ from typing import List
 
 
 class Solution:
+    # time = O(n)
     def maxProfit(self, prices: List[int]) -> int:
         current, add_amount = 0, 0
         for i in range(len(prices) - 1):

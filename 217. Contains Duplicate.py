@@ -13,8 +13,6 @@ class Solution:
 
         return False
 
-    # Space complexity can be made O(1) at the cost of making time complexity O(n log n)
-
 
 if __name__ == '__main__':
     solution = Solution()

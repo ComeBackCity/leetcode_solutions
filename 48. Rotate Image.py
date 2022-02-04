@@ -3,6 +3,7 @@ from typing import List
 
 
 class Solution:
+    # time = O(n^2) memory = O(1)
     def rotate(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.

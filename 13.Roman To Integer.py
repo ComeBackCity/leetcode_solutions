@@ -18,6 +18,7 @@ class Solution2:
             'M': 1000
         }
 
+    # time = O(n) memory = O(1)
     def romanToInt(self, s: str) -> int:
         length = len(s)
         num = 0

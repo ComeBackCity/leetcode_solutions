@@ -1,6 +1,7 @@
 # Problem Link: https://leetcode.com/problems/happy-number/
 class Solution:
-    def sum_of_square_of_digits(self, n: int) -> int:
+    @staticmethod
+    def sum_of_square_of_digits(n: int) -> int:
         res = 0
         temp = n
         while temp:

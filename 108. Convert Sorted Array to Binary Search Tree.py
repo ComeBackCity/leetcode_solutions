@@ -11,6 +11,7 @@ class TreeNode:
 
 
 class Solution:
+    # time = O(lg n) memory = (n lg n)
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
         list_length = len(nums)
         if list_length == 0:

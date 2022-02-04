@@ -17,6 +17,7 @@ class Solution:
 
         return quotient
 
+    # time = O(lg n ^ 2)
     def divide2(self, dividend: int, divisor: int) -> int:
         is_neg = (dividend < 0) != (divisor < 0)
         dividend, divisor = abs(dividend), abs(divisor)
