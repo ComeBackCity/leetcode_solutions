@@ -3,6 +3,7 @@ from typing import List
 
 
 class Solution:
+    # time = O(lg n) memory = O(1)
     def findPeakElement(self, nums: List[int]) -> int:
         l, r = 0, len(nums) - 1
 
@@ -17,3 +18,8 @@ class Solution:
                 r = mid - 1
 
         return l
+
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.findPeakElement([1, 2]))
